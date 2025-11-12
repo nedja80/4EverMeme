@@ -1,0 +1,110 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>4EverMeme (4EVM) — Official Site</title>
+  <meta name="description" content="4EverMeme (4EVM) — a BEP-20 meme token on BNB Smart Chain. Creativity, transparency and community." />
+  <meta property="og:title" content="4EverMeme (4EVM)" />
+  <meta property="og:description" content="BEP-20 meme token on BNB Smart Chain. Join the community!" />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="https://raw.githubusercontent.com/nedja80/4EverMeme/main/logo.png" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <link rel="icon" href="favicon.png" />
+  <style>
+    :root { --bg:#0b0f14; --panel:#121823; --text:#e9eef5; --muted:#9bb0c9; --accent:#5ee1a8; }
+    *{box-sizing:border-box} body{margin:0;background:var(--bg);color:var(--text);font:16px/1.6 system-ui,Segoe UI,Roboto,Helvetica,Arial}
+    a{color:var(--accent);text-decoration:none} a:hover{text-decoration:underline}
+    .wrap{max-width:1000px;margin:auto;padding:24px}
+    header{padding:48px 0;text-align:center}
+    .badge{display:inline-block;background:var(--panel);border:1px solid #1f2a3b;padding:6px 10px;border-radius:999px;color:var(--muted);font-size:14px}
+    h1{font-size:48px;margin:16px 0 8px} h2{margin:32px 0 12px}
+    .cta{display:flex;gap:12px;justify-content:center;flex-wrap:wrap;margin-top:18px}
+    .btn{background:var(--accent);color:#062b1f;padding:12px 18px;border-radius:10px;font-weight:700;border:0;cursor:pointer}
+    .btn.secondary{background:#1f2a3b;color:var(--text)}
+    section{background:var(--panel);border:1px solid #1f2a3b;border-radius:14px;padding:20px;margin:16px 0}
+    .grid{display:grid;gap:16px} @media(min-width:800px){.grid{grid-template-columns:1fr 1fr}}
+    .mono{font-family:ui-monospace,SFMono-Regular,Menlo,Monaco,Consolas,monospace}
+    footer{color:var(--muted);text-align:center;padding:30px 0}
+    .small{font-size:13px;color:var(--muted)}
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <div class="badge">BNB Smart Chain · BEP-20</div>
+      <h1>4EverMeme (4EVM)</h1>
+      <p>Where meme culture meets transparent blockchain — built for creativity, fun, and community.</p>
+      <div class="cta">
+        <a class="btn" href="https://pancakeswap.finance/swap?outputCurrency=0xDE008b6e97ad5D05D4f49D3949E91E165f3092Ef" target="_blank" rel="noopener">Buy on PancakeSwap</a>
+        <a class="btn secondary" href="https://bscscan.com/token/0xDE008b6e97ad5D05D4f49D3949E91E165f3092Ef" target="_blank" rel="noopener">View on BscScan</a>
+        <button class="btn secondary" id="copy">Copy Contract</button>
+      </div>
+      <div class="small" style="margin-top:8px">
+        <span class="mono" id="addr">0xDE008b6e97ad5D05D4f49D3949E91E165f3092Ef</span>
+      </div>
+    </header>
+
+    <section class="grid">
+      <div>
+        <h2>About</h2>
+        <p><strong>4EverMeme (4EVM)</strong> is a BEP-20 token on BNB Smart Chain focused on community-driven entertainment and transparency.</p>
+        <ul class="small">
+          <li>No buy/sell tax (contract verified on BscScan)</li>
+          <li>Liquidity pair: WBNB / 4EVM</li>
+          <li>Open-source metadata and public links</li>
+        </ul>
+      </div>
+      <div>
+        <h2>Token Info</h2>
+        <ul>
+          <li><b>Name:</b> 4EverMeme</li>
+          <li><b>Symbol:</b> 4EVM</li>
+          <li><b>Decimals:</b> 18</li>
+          <li><b>Total Supply:</b> 1,000,000,000</li>
+          <li><b>Contract:</b> <span class="mono">0xDE008b6e97ad5D05D4f49D3949E91E165f3092Ef</span></li>
+        </ul>
+      </div>
+    </section>
+
+    <section>
+      <h2>How to Buy</h2>
+      <ol>
+        <li>Install/Apri MetaMask e seleziona <b>BNB Smart Chain</b>.</li>
+        <li>Visita PancakeSwap e importa il contratto <span class="mono">0xDE00…092Ef</span>.</li>
+        <li>Scambia BNB ⇄ 4EVM. Se serve, alza leggermente lo slippage.</li>
+      </ol>
+    </section>
+
+    <section class="grid">
+      <div>
+        <h2>Links</h2>
+        <ul>
+          <li><a href="https://t.me/4evermeme" target="_blank">Telegram</a></li>
+          <li><a href="https://x.com/4evermeme" target="_blank">Twitter/X</a></li>
+          <li><a href="https://github.com/nedja80/4EverMeme" target="_blank">GitHub</a></li>
+          <li><a href="https://bscscan.com/address/0xDE008b6e97ad5D05D4f49D3949E91E165f3092Ef#code" target="_blank">Contract (Verified)</a></li>
+        </ul>
+      </div>
+      <div>
+        <h2>Disclaimer</h2>
+        <p class="small">This is a community-driven, experimental project. Nothing here is financial advice. Do your own research. Tokens may be volatile and carry risk.</p>
+      </div>
+    </section>
+
+    <footer class="small">© 4EverMeme — Built by the community.</footer>
+  </div>
+
+  <script>
+    const btn = document.getElementById('copy');
+    const addr = document.getElementById('addr').textContent.trim();
+    btn.addEventListener('click', async () => {
+      try {
+        await navigator.clipboard.writeText(addr);
+        btn.textContent = 'Copied!';
+        setTimeout(()=>btn.textContent='Copy Contract',1200);
+      } catch(e){ alert(addr); }
+    });
+  </script>
+</body>
+</html>
