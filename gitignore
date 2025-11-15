@@ -1,0 +1,67 @@
+# Dependencies
+node_modules/
+package-lock.json
+yarn.lock
+
+# Environment variables
+.env
+.env.local
+.env.production
+.env.test
+
+# Hardhat
+cache/
+artifacts/
+typechain-types/
+
+# Coverage
+coverage/
+coverage.json
+.coverage_artifacts
+.coverage_cache
+.coverage_contracts
+
+# Build files
+build/
+dist/
+out/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+
+# Logs
+*.log
+logs/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Testing
+.nyc_output
+
+# Misc
+.cache/
+temp/
+tmp/
+*.tmp
+
+# Deployment artifacts
+deployments/
+scripts/deploy-output.json
+
+# OS
+Thumbs.db
+.DS_Store
+
+# Documentation build
+docs/.vitepress/dist
+docs/.vitepress/cache
+
+# Local development
+.local/
+local/
