@@ -56,7 +56,7 @@
 
 Stay connected with the 4EverMeme community:
 
-- 🌐 **Website**: Coming Soon
+- 🌐 **Website**: https://nenadmarinovic.github.io/4EverMeme/
 - 💬 **Telegram**: [Join our community](https://t.me/4evermeme)
 - 🐦 **Twitter/X**: [@4evermeme](https://x.com/4evermeme)
 - 💻 **GitHub**: [4EverMeme Repository](https://github.com/nedja80/4EverMeme)
@@ -104,7 +104,7 @@ More information on how to purchase 4EVM tokens will be available soon. Stay tun
 - ✅ Token deployment and verification
 - ✅ Community building on Telegram and Twitter
 - ✅ GitHub repository establishment
-- 🔄 Website development
+- ✅ Website launched
 
 ### Phase 2: Growth
 - 📱 Enhanced social media presence
