@@ -70,9 +70,9 @@
 
 | Info | Details |
 |------|---------|
-| **Developer** | Nedja80 |
+| **Developer** |4EverMeme|
 | **Email** | 4evermeme.official@gmail.com |
-| **GitHub** | [@nedja80](https://github.com/nedja80) |
+| **GitHub** | 4EverMeme |
 
 ---
 
